@@ -2,6 +2,21 @@
 
 2021.02.26程設練習
 
+# 練習一
+```c
+#include<stdio.h>
+int main(void)
+{
+	int n;
+	
+	scanf("%d",&n);
+
+	printf("%d=50*%d+5*%d+1*%d",n,n/50,n%50/5,n%5);
+
+	return 0;
+}
+```
+
 # 練習三
 ```c
 #include<stdio.h>
