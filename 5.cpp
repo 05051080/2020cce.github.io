@@ -1,15 +1,13 @@
 #include<stdio.h>
-int main(void)
+int main()
 {
-	int a,b,n=0;
-	
+	int a,b,i,ans=1;
 	scanf("%d %d",&a,&b);
-	
-	if(a>b)
-		n=a%b;
-	else
-		n=b%a;
-	printf("%d %d",a/n,b/n);
-
+	for(i=1;i<=b;i++)
+	{
+		if(a%i==0 && b%i==0)
+			ans=i;
+	}
+	printf("%d %d\n",a/ans,b/ans);
 	return 0;
 }
