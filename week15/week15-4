@@ -1,0 +1,14 @@
+import processing.sound.*;
+SoundFile player;
+//tada.mp3 可以拉進來這
+void setup(){
+  size(400,200);
+  textSize(40);
+  player = new SoundFile(this, "tada.mp3");
+}//記得把tada.mp3也放進來
+void draw(){
+  background(41,109,207);
+  int s = second();
+  text(9-s%10,100,100);
+  if(9-s%10 == 0) player.play();
+}
